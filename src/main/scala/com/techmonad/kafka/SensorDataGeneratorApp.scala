@@ -13,7 +13,7 @@ object SensorDataGeneratorApp extends App {
     val temperature: Float = rand.nextInt(120)
     val time = System.currentTimeMillis()
     producer.send("data_queue3", s"$time,$temperature,$time")
-    Thread.sleep(10)
+    Thread.sleep(5)
   }
 
 }
